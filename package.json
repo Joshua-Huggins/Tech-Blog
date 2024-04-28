@@ -8,5 +8,15 @@
     "handlebars": "^4.7.8",
     "pg": "^8.11.5",
     "sequelize": "^6.37.3"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "tech-blog",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }
