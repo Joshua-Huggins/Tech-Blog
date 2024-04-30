@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+    <!--> Add Css Later <-->
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a class="link" href="/Dashboard">Dashboard</a></li>
+            <li><a class="link" href="/">Home</a></li>
+            {{#if loggedIn}}
+            <li><a class="link" href="/" id="logout">Logout</a></li>
+            {{#else}}
+            <li><a class="link" href="/">Login</a></li>
+        </ul>
+    </nav>
+</body>
