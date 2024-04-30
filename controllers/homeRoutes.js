@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { User } = require('../models');
-const withAuth = require('../utils');
+const withAuth = require('../utils/withAuth');
 
 router.get('/', withAuth, async (req, res) => {
     try {
@@ -27,5 +27,14 @@ router.get('/login', (req, res) => {
     }
     res.render('login');
 });
+
+// go back for auth
+router.get('/signup', (req, res) => {
+   // if (req.session.logged_in) {
+//         res.redirect('/');
+//         return;
+//     }
+     res.render('signup');
+ });
 
 module.exports = router;
